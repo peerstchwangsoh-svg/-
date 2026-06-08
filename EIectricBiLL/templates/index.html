@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>คำนวณค่าไฟฟ้า</title>
+</head>
+<body>
+    <h1>คำนวณค่าไฟฟ้า</h1>
+
+    <form method="POST">
+        <label>หน่วยไฟฟ้า:</label>
+        <input type="number" step="0.01" name="unit" required>
+        <button type="submit">คำนวณ</button>
+    </form>
+
+    {% if total %}
+    <h2>ค่าไฟ = {{ total }} บาท</h2>
+    {% endif %}
+</body>
+</html>
